@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="917daf744f621300c742e321a310c718" sys_domain="global" table="x_218245_expense_expense_summary" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_expense_month_year</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-05 11:42:57</sys_created_on>
+            <sys_id>728878094f261300c742e321a310c738</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_218245_expense_expense_summary" sys_domain="global" view="Default view">917daf744f621300c742e321a310c718</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-05 11:42:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_expense_salary</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-05 11:42:57</sys_created_on>
+            <sys_id>f28878094f261300c742e321a310c738</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_218245_expense_expense_summary" sys_domain="global" view="Default view">917daf744f621300c742e321a310c718</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-05 11:42:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_expense_spent</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-05 11:42:57</sys_created_on>
+            <sys_id>768878094f261300c742e321a310c738</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_218245_expense_expense_summary" sys_domain="global" view="Default view">917daf744f621300c742e321a310c718</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-05 11:42:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_expense_monthly_limit</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-05 11:42:57</sys_created_on>
+            <sys_id>f68878094f261300c742e321a310c738</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_218245_expense_expense_summary" sys_domain="global" view="Default view">917daf744f621300c742e321a310c718</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-05 11:42:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_expense_monthly_savings</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-05 11:42:57</sys_created_on>
+            <sys_id>7a8878094f261300c742e321a310c738</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_218245_expense_expense_summary" sys_domain="global" view="Default view">917daf744f621300c742e321a310c718</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-05 11:42:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_218245_expense_expense_summary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-05 06:14:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>917daf744f621300c742e321a310c718</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_218245_expense_expense_summary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+            <sys_update_name>sys_ui_section_917daf744f621300c742e321a310c718</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-05 06:14:53</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

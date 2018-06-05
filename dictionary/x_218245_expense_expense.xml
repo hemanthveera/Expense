@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Expense" max_length="40" name="x_218245_expense_expense" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="maintenance" label="Expense Category" mandatory="true" max_length="40" name="u_expense_category" type="string">
+            <choice>
+                <element label="Maintenance" sequence="0" value="maintenance"/>
+                <element label="EMI" sequence="1" value="emi"/>
+                <element label="Groceries" sequence="2" value="groceries"/>
+                <element label="Fuel" sequence="3" value="fuel"/>
+                <element label="Entertainment" sequence="4" value="entertainment"/>
+                <element label="Dine Out" sequence="5" value="dineout"/>
+                <element label="Other" sequence="6" value="other"/>
+            </choice>
+        </element>
+        <element label="Cost" mandatory="true" max_length="15" name="u_expense_cost" type="decimal"/>
+        <element label="Expense Date" mandatory="true" max_length="40" name="u_expense_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Expense Item" mandatory="true" max_length="100" name="u_expense_item" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" default="0" label="Total Expense" max_length="20" name="u_expense_total_expense" type="price"/>
+    </element>
+</database>

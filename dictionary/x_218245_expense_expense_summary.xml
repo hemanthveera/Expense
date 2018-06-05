@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Expense Summary" max_length="40" name="x_218245_expense_expense_summary" type="collection">
+        <element label="Monthly Limit" max_length="40" name="u_expense_monthly_limit" type="float"/>
+        <element label="Monthly Savings" max_length="40" name="u_expense_monthly_savings" read_only="true" type="float"/>
+        <element display="true" label="Expense Month and Year" max_length="40" name="u_expense_month_year" type="glide_date"/>
+        <element default="65000" label="Salary" max_length="40" name="u_expense_salary" type="float"/>
+        <element default="0" label="Spent" max_length="40" name="u_expense_spent" read_only="true" type="float"/>
+    </element>
+</database>

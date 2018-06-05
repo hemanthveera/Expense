@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_218245_expense_expense</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Expense Summary</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if(previous.u_expense_cost!=current.u_expense_cost){
+		var v_expense_date= new GlideDate();
+		v_expense_date.setValue(current.u_expense_date);
+		var vMonth=v_expense_date.getMonthNoTZ();
+		var vYear=v_expense_date.getYearNoTZ();
+		//Calculate Total Cost for Current Month and Year
+		var v_ga = new GlideRecord('x_218245_expense_expense');
+		var v_sum=0.00;
+		var v_savings=0.00;
+		var v_salary=0.00;
+		v_ga.addQuery('u_expense_date','>=',vYear+'-'+vMonth+'-01');
+		v_ga.addQuery('u_expense_date','<=',vYear+'-'+vMonth+'-31');
+		v_ga.query();
+		while(v_ga.next()){
+			v_sum=v_sum+parseFloat(v_ga.getValue('u_expense_cost'));
+		}
+		//Since current cost is not yet written to database, v_sum will still be based on 
+		// previous value, so subtracting previous value and then adding current value
+		v_sum=v_sum-parseFloat(previous.u_expense_cost)+parseFloat(current.u_expense_cost);
+		
+		//Updating/Inserting Expense Summary Table
+		var gexpsum= new GlideRecord('x_218245_expense_expense_summary');		
+		gexpsum.addQuery('u_expense_month_year','>=',vYear+'-'+vMonth+'-01');
+		gexpsum.addQuery('u_expense_month_year','<=',vYear+'-'+vMonth+'-31');
+		gexpsum.query();
+		gexpsum.next();		
+		if(gexpsum.getRowCount()>0){
+			//This logic is to update existing record
+			gexpsum.u_expense_spent=parseFloat(v_sum);			
+			gexpsum.update();
+			gexpsum.query();
+			gexpsum.next();
+			v_salary=v_salary+(parseFloat(gexpsum.getValue('u_expense_salary')));
+			v_savings=v_savings+(parseFloat(v_salary)-parseFloat(gexpsum.getValue('u_expense_spent')));
+			gexpsum.u_expense_monthly_savings=parseFloat(v_savings);
+			gexpsum.update();
+		}
+		else {
+			//Throw error to user and rollback.
+			// Do not insert new data
+			gs.addErrorMessage("Please Insert Salary For "+v_expense_date.getByFormat("MMM-YYYY")+" Month and then add Expenses");
+			current.setAbortAction(true);		
+		}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-05 07:36:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c610c4054fa21300c742e321a310c72f</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Calculate Expense Summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_script_c610c4054fa21300c742e321a310c72f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-05 12:20:10</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c610c4054fa21300c742e321a310c72f"/>
+</record_update>
