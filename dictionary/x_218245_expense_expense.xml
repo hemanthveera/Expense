@@ -16,5 +16,6 @@
         <element label="Expense Date" mandatory="true" max_length="40" name="u_expense_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Expense Item" mandatory="true" max_length="100" name="u_expense_item" type="string"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" default="0" label="Total Expense" max_length="20" name="u_expense_total_expense" type="price"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var gdt= new GlideDate();&#13;&#10;&#9;gdt.setValue(current.u_expense_date);&#13;&#10;&#9;return gdt.getByFormat(&quot;MMM-YYYY&quot;);&#13;&#10;&#13;&#10;})(current);" display="true" label="Month &amp; Year" max_length="100" name="u_month_year" read_only="true" type="string" virtual="true"/>
     </element>
 </database>
