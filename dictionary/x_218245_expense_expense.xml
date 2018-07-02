@@ -10,6 +10,9 @@
                 <element label="Entertainment" sequence="4" value="entertainment"/>
                 <element label="Dine Out" sequence="5" value="dineout"/>
                 <element label="Other" sequence="6" value="other"/>
+                <element label="Shopping" sequence="7" value="shopping"/>
+                <element label="Medical" sequence="8" value="medical"/>
+                <element label="Gifts" sequence="9" value="gifts"/>
             </choice>
         </element>
         <element label="Cost" mandatory="true" max_length="15" name="u_expense_cost" type="decimal"/>

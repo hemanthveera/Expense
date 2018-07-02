@@ -12,7 +12,7 @@
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
-        <chart_size>small</chart_size>
+        <chart_size>large</chart_size>
         <chart_title/>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
@@ -33,12 +33,12 @@
         <description/>
         <direction>minimize</direction>
         <display_column_lines>false</display_column_lines>
-        <display_grid>true</display_grid>
+        <display_grid>false</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>u_expense_category</field>
+        <field>u_expense_item</field>
         <field_list/>
         <filter/>
         <from/>
@@ -66,7 +66,7 @@
         <others>true</others>
         <page_hdrftr/>
         <pivot_expanded>true</pivot_expanded>
-        <report_drilldown display_value="Items">139e2c2f4f221300c742e321a310c70d</report_drilldown>
+        <report_drilldown/>
         <report_source/>
         <roles>public</roles>
         <row/>
@@ -93,18 +93,18 @@
         <sumfield>u_expense_cost</sumfield>
         <sys_class_name>sys_report_drill</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-05 13:56:16</sys_created_on>
-        <sys_id>b307ddcd4f661300c742e321a310c72e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Categories</sys_name>
+        <sys_created_on>2018-06-13 05:24:22</sys_created_on>
+        <sys_id>139e2c2f4f221300c742e321a310c70d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Items</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
-        <sys_update_name>sys_report_drill_b307ddcd4f661300c742e321a310c72e</sys_update_name>
+        <sys_update_name>sys_report_drill_139e2c2f4f221300c742e321a310c70d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-06-13 05:24:22</sys_updated_on>
         <table>x_218245_expense_expense</table>
-        <title>Categories</title>
+        <title>Items</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
