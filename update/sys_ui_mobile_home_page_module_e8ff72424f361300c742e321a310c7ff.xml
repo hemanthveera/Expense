@@ -6,7 +6,7 @@
         <content_style>light_content</content_style>
         <icon>book-open</icon>
         <image/>
-        <module display_value="Expense Portal">8a9fbace4ff21300c742e321a310c7b1</module>
+        <module display_value="Expense Report">8a9fbace4ff21300c742e321a310c7b1</module>
         <roles>x_218245_expense.expense_user</roles>
         <subtitle/>
         <sys_class_name>sys_ui_mobile_home_page_module</sys_class_name>
