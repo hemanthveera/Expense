@@ -197,7 +197,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-06-05 07:19:45</sys_created_on>
-            <sys_id>af4c33b04fa21300c742e321a310c724</sys_id>
+            <sys_id>fadd38524f431300c742e321a310c7ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>u_expense_category</sys_name>
             <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>

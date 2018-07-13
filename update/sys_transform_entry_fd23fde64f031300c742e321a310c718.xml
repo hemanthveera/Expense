@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="expense_transform_map">d803b9e64f031300c742e321a310c7bd</map>
+        <reference_value_field/>
+        <source_field>u_month___year</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_218245_expense_expense_import</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-05 04:21:16</sys_created_on>
+        <sys_id>fd23fde64f031300c742e321a310c718</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_month___year</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_transform_entry_fd23fde64f031300c742e321a310c718</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-05 04:21:16</sys_updated_on>
+        <target_field>u_month_year</target_field>
+        <target_table>x_218245_expense_expense</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>

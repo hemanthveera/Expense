@@ -6,6 +6,6 @@
         <element label="Expense Month and Year" max_length="40" name="u_expense_month_year" type="glide_date"/>
         <element default="65000" label="Salary" max_length="40" name="u_expense_salary" type="float"/>
         <element default="0" label="Spent" max_length="40" name="u_expense_spent" read_only="true" type="float"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var gdt= new GlideDate();&#13;&#10;&#9;gdt.setValue(current.u_expense_month_year);&#13;&#10;&#9;return gdt.getByFormat(&quot;MMM-YYYY&quot;); &#13;&#10;&#13;&#10;})(current);" display="true" label="Month &amp; Year" max_length="100" name="u_month_year" read_only="true" type="string" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var gdt= new GlideDate();&#10;&#9;gdt.setValue(current.u_expense_month_year);&#10;&#9;return gdt.getByFormat(&quot;MMM-YYYY&quot;); &#10;&#10;})(current);" display="true" label="Month &amp; Year" max_length="100" name="u_month_year" read_only="true" type="string" virtual="true"/>
     </element>
 </database>

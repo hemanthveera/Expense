@@ -5,22 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_218245_expense_expense</name>
+        <name>x_218245_expense_expense_summary</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-05 06:04:45</sys_created_on>
-        <sys_id>702be3f44f621300c742e321a310c71f</sys_id>
+        <sys_created_on>2018-06-05 06:08:37</sys_created_on>
+        <sys_id>75ddf4524f431300c742e321a310c77e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_218245_expense_expense</sys_name>
+        <sys_name>x_218245_expense_expense_summary</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
-        <sys_update_name>ua_table_licensing_config_702be3f44f621300c742e321a310c71f</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_75ddf4524f431300c742e321a310c77e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-05 06:04:45</sys_updated_on>
+        <sys_updated_on>2018-06-05 06:08:37</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>
