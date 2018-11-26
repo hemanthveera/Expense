@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <additional_groupby>u_month_year</additional_groupby>
+        <additional_groupby/>
         <aggregate>SUM</aggregate>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
@@ -38,7 +38,7 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>u_month_year</field>
+        <field>u_expense_category</field>
         <field_list/>
         <filter/>
         <from/>
@@ -62,12 +62,12 @@
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
         <orderby_list/>
-        <other_threshold>-2</other_threshold>
+        <other_threshold>-1</other_threshold>
         <others>true</others>
         <page_hdrftr/>
         <pivot_expanded>true</pivot_expanded>
-        <report_drilldown display_value="Categories">b307ddcd4f661300c742e321a310c72e</report_drilldown>
-        <report_source/>
+        <report_drilldown/>
+        <report_source display_value="Expense Summary Source (Expense)">b2e820894fc22300c742e321a310c731</report_source>
         <roles>public</roles>
         <row/>
         <sc_groupby_item_id/>
@@ -78,7 +78,7 @@
         <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>false</show_chart_data_label>
+        <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
@@ -88,21 +88,21 @@
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
         <show_zero>false</show_zero>
-        <source_type>table</source_type>
+        <source_type>source</source_type>
         <start_time/>
         <sumfield>u_expense_cost</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-05 13:49:38</sys_created_on>
         <sys_id>7685d5cd4f661300c742e321a310c7d7</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Expense Summary</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sys_report_7685d5cd4f661300c742e321a310c7d7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-05 14:38:32</sys_updated_on>
+        <sys_updated_on>2018-11-26 10:20:55</sys_updated_on>
         <table>x_218245_expense_expense</table>
         <title>Expense Summary</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

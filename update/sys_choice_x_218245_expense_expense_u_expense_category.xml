@@ -6,6 +6,25 @@
             <element>u_expense_category</element>
             <hint/>
             <inactive>false</inactive>
+            <label>House</label>
+            <language>en</language>
+            <name>x_218245_expense_expense</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-26 10:49:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a0170014f062300c742e321a310c726</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-26 10:49:52</sys_updated_on>
+            <value>house</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_expense_category</element>
+            <hint/>
+            <inactive>true</inactive>
             <label>Maintenance</label>
             <language>en</language>
             <name>x_218245_expense_expense</name>
@@ -15,162 +34,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a34c33b04fa21300c742e321a310c724</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-05 07:19:45</sys_updated_on>
+            <sys_updated_on>2018-11-26 10:49:53</sys_updated_on>
             <value>maintenance</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>EMI</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>1</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-05 07:19:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>e34c33b04fa21300c742e321a310c725</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-05 07:19:45</sys_updated_on>
-            <value>emi</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Groceries</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>2</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-05 07:19:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>634c33b04fa21300c742e321a310c726</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-05 07:19:45</sys_updated_on>
-            <value>groceries</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Fuel</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>3</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-05 07:19:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>ef4c33b04fa21300c742e321a310c726</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-05 07:19:45</sys_updated_on>
-            <value>fuel</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Entertainment</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>4</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-05 07:19:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>6f4c33b04fa21300c742e321a310c727</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-05 07:19:45</sys_updated_on>
-            <value>entertainment</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Dine Out</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>5</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-05 07:19:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>eb4c33b04fa21300c742e321a310c728</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-05 07:19:45</sys_updated_on>
-            <value>dineout</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Shopping</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>6</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-02 14:21:28</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d4cfdcb94f471300c742e321a310c79a</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-21 05:05:53</sys_updated_on>
-            <value>shopping</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Medical</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>7</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-02 14:21:28</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>98cfdcb94f471300c742e321a310c79b</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-21 05:05:53</sys_updated_on>
-            <value>medical</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_expense_category</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Gifts</label>
-            <language>en</language>
-            <name>x_218245_expense_expense</name>
-            <sequence>8</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-02 14:21:28</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>18cfdcb94f471300c742e321a310c79c</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-21 05:05:53</sys_updated_on>
-            <value>gifts</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -180,15 +47,15 @@
             <label>Transport</label>
             <language>en</language>
             <name>x_218245_expense_expense</name>
-            <sequence>9</sequence>
+            <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-07-21 05:05:53</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1fc690b74f131300c742e321a310c7d2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-21 05:05:53</sys_updated_on>
+            <sys_updated_on>2018-11-26 10:49:52</sys_updated_on>
             <value>transport</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -196,19 +63,76 @@
             <element>u_expense_category</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Other</label>
+            <label>Food &amp; Drinks</label>
             <language>en</language>
             <name>x_218245_expense_expense</name>
-            <sequence>10</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-05 07:19:45</sys_created_on>
+            <sys_created_on>2018-11-26 10:49:52</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6b4c33b04fa21300c742e321a310c729</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>860170014f062300c742e321a310c728</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-21 05:05:53</sys_updated_on>
-            <value>other</value>
+            <sys_updated_on>2018-11-26 13:24:54</sys_updated_on>
+            <value>food and drinks</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Clothing</label>
+            <language>en</language>
+            <name>x_218245_expense_expense</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-26 10:49:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>460170014f062300c742e321a310c729</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-26 10:49:52</sys_updated_on>
+            <value>clothing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fun</label>
+            <language>en</language>
+            <name>x_218245_expense_expense</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-26 10:49:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>060170014f062300c742e321a310c72a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-26 10:49:52</sys_updated_on>
+            <value>fun</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Misc</label>
+            <language>en</language>
+            <name>x_218245_expense_expense</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-26 10:49:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c20170014f062300c742e321a310c72b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-26 10:49:53</sys_updated_on>
+            <value>misc</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_expense_category</element>
