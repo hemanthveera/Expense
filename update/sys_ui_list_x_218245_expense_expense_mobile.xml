@@ -4,92 +4,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_expense_date</element>
-            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">a304b12a4f031300c742e321a310c7a2</list_id>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
-            <sys_id>e704b12a4f031300c742e321a310c7a2</sys_id>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>634e341d4f422300c742e321a310c7a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_month_year</element>
-            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">a304b12a4f031300c742e321a310c7a2</list_id>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
-            <sys_id>6b04b12a4f031300c742e321a310c7a2</sys_id>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>e34e341d4f422300c742e321a310c7a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_expense_item</element>
-            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">a304b12a4f031300c742e321a310c7a2</list_id>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
-            <sys_id>eb04b12a4f031300c742e321a310c7a2</sys_id>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>674e341d4f422300c742e321a310c7a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_expense_category</element>
-            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">a304b12a4f031300c742e321a310c7a2</list_id>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
-            <sys_id>6f04b12a4f031300c742e321a310c7a2</sys_id>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>e74e341d4f422300c742e321a310c7a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_expense_cost</element>
-            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">a304b12a4f031300c742e321a310c7a2</list_id>
+            <element>u_sub_category</element>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
-            <sys_id>ef04b12a4f031300c742e321a310c7a2</sys_id>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>6b4e341d4f422300c742e321a310c7a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_by</element>
-            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">a304b12a4f031300c742e321a310c7a2</list_id>
+            <element>u_expense_cost</element>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
-            <sys_id>6304b12a4f031300c742e321a310c7a3</sys_id>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>eb4e341d4f422300c742e321a310c7a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_218245_expense_expense" element="NULL" name="x_218245_expense_expense" parent="NULL" relationship="NULL" sys_domain="global" view="6c0d7162b92013006517ce7df7ee4673">eb4e341d4f422300c742e321a310c7a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-27 06:26:21</sys_created_on>
+            <sys_id>6f4e341d4f422300c742e321a310c7a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-27 06:26:21</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,10 +118,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-05 04:25:13</sys_created_on>
+            <sys_created_on>2018-11-27 06:26:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a304b12a4f031300c742e321a310c7a2</sys_id>
+            <sys_id>eb4e341d4f422300c742e321a310c7a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_218245_expense_expense</sys_name>
             <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
@@ -114,7 +129,7 @@
             <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
             <sys_update_name>sys_ui_list_x_218245_expense_expense_Mobile</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-05 04:25:13</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:26:20</sys_updated_on>
             <sys_user/>
             <view display_value="Mobile" name="Mobile">6c0d7162b92013006517ce7df7ee4673</view>
             <view_name/>
