@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_mobile_theme">
+    <sys_ui_mobile_theme action="INSERT_OR_UPDATE">
+        <accent_color>#98FB98</accent_color>
+        <base_theme>default</base_theme>
+        <name>Expense</name>
+        <navigation_accent_color/>
+        <navigation_bar_color/>
+        <navigation_bar_title>Expense</navigation_bar_title>
+        <navigation_title_color>#228B22</navigation_title_color>
+        <sys_class_name>sys_ui_mobile_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-27 09:37:36</sys_created_on>
+        <sys_id>185849d14f822300c742e321a310c76e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expense</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_ui_mobile_theme_185849d14f822300c742e321a310c76e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-27 09:37:36</sys_updated_on>
+        <title_image/>
+        <toolbar_accent_color/>
+        <toolbar_color/>
+    </sys_ui_mobile_theme>
+</record_update>

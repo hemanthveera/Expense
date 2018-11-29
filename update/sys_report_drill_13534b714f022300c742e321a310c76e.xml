@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report">
-    <sys_report action="INSERT_OR_UPDATE">
+<record_update table="sys_report_drill">
+    <sys_report_drill action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>SUM</aggregate>
         <allow_data_label_overlap>false</allow_data_label_overlap>
@@ -12,8 +12,8 @@
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
-        <chart_size>small</chart_size>
-        <chart_title/>
+        <chart_size>large</chart_size>
+        <chart_title>Expenses per SubCategory</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
@@ -28,17 +28,17 @@
         <created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
-        <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
+        <custom_config/>
         <decimal_precision>2</decimal_precision>
         <description/>
         <direction>minimize</direction>
         <display_column_lines>false</display_column_lines>
-        <display_grid>true</display_grid>
+        <display_grid>false</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>u_expense_category</field>
+        <field>u_sub_category</field>
         <field_list/>
         <filter/>
         <from/>
@@ -62,11 +62,11 @@
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
         <orderby_list/>
-        <other_threshold>-1</other_threshold>
+        <other_threshold>-2</other_threshold>
         <others>true</others>
         <page_hdrftr/>
         <pivot_expanded>true</pivot_expanded>
-        <report_drilldown display_value="subcategory">13534b714f022300c742e321a310c76e</report_drilldown>
+        <report_drilldown/>
         <report_source display_value="Expense Summary Source (Expense)">b2e820894fc22300c742e321a310c731</report_source>
         <roles>public</roles>
         <row/>
@@ -91,20 +91,20 @@
         <source_type>source</source_type>
         <start_time/>
         <sumfield>u_expense_cost</sumfield>
-        <sys_class_name>sys_report</sys_class_name>
+        <sys_class_name>sys_report_drill</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-05 13:49:38</sys_created_on>
-        <sys_id>7685d5cd4f661300c742e321a310c7d7</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Expense Summary</sys_name>
+        <sys_created_on>2018-11-29 05:24:39</sys_created_on>
+        <sys_id>13534b714f022300c742e321a310c76e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>subcategory</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
-        <sys_update_name>sys_report_7685d5cd4f661300c742e321a310c7d7</sys_update_name>
+        <sys_update_name>sys_report_drill_13534b714f022300c742e321a310c76e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-29 05:29:22</sys_updated_on>
+        <sys_updated_on>2018-11-29 05:27:52</sys_updated_on>
         <table>x_218245_expense_expense</table>
-        <title>Expense Summary</title>
+        <title>subcategory</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
@@ -139,5 +139,5 @@
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>
         <y_axis_to/>
-    </sys_report>
+    </sys_report_drill>
 </record_update>

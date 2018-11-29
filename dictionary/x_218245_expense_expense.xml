@@ -13,11 +13,11 @@
         </element>
         <element label="Cost" mandatory="true" max_length="15" name="u_expense_cost" type="decimal"/>
         <element label="Expense Date" mandatory="true" max_length="40" name="u_expense_date" type="glide_date"/>
-        <element attributes="barcode,edge_encryption_enabled=true" label="Expense Item" mandatory="true" max_length="100" name="u_expense_item" type="string"/>
+        <element attributes="barcode,edge_encryption_enabled=true" label="Notes" max_length="100" name="u_expense_item" type="string"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" default="0" label="Total Expense" max_length="20" name="u_expense_total_expense" type="price"/>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var gdt= new GlideDate();&#10;&#9;gdt.setValue(current.u_expense_date);&#10;&#9;return gdt.getByFormat(&quot;MMM-YYYY&quot;);&#10;&#10;})(current);" display="true" label="Month &amp; Year" max_length="100" name="u_month_year" read_only="true" type="string" virtual="true"/>
         <element attributes="edge_encryption_enabled=true" label="Notes" max_length="50" name="u_notes" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="groceries" dependent="u_expense_category" dependent_on_field="u_expense_category" label="Sub Category" max_length="40" name="u_sub_category" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_expense_category" dependent_on_field="u_expense_category" label="Sub Category" max_length="40" name="u_sub_category" type="string" use_dependent_field="true">
             <choice>
                 <element dependent_value="house" label="Groceries" sequence="0" value="groceries"/>
                 <element dependent_value="house" label="Maintenance" sequence="1" value="maintenance"/>

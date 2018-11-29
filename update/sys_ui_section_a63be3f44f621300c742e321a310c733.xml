@@ -5,83 +5,69 @@
             <element>u_expense_date</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-11-27 06:41:31</sys_created_on>
-            <sys_id>7dc18d9d4f422300c742e321a310c745</sys_id>
+            <sys_created_on>2018-11-27 06:44:01</sys_created_on>
+            <sys_id>265245dd4f422300c742e321a310c77f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Expenses" display_value="Expenses" name="x_218245_expense_expense" sys_domain="global" view="Default view">a63be3f44f621300c742e321a310c733</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-11-27 06:41:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_expense_item</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-11-27 06:41:31</sys_created_on>
-            <sys_id>fdc18d9d4f422300c742e321a310c745</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Expenses" display_value="Expenses" name="x_218245_expense_expense" sys_domain="global" view="Default view">a63be3f44f621300c742e321a310c733</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-11-27 06:41:31</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:44:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_expense_category</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-11-27 06:41:31</sys_created_on>
-            <sys_id>71c18d9d4f422300c742e321a310c746</sys_id>
+            <sys_created_on>2018-11-27 06:44:01</sys_created_on>
+            <sys_id>a65245dd4f422300c742e321a310c77f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Expenses" display_value="Expenses" name="x_218245_expense_expense" sys_domain="global" view="Default view">a63be3f44f621300c742e321a310c733</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-11-27 06:41:31</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:44:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sub_category</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-11-27 06:41:31</sys_created_on>
-            <sys_id>f1c18d9d4f422300c742e321a310c746</sys_id>
+            <sys_created_on>2018-11-27 06:44:01</sys_created_on>
+            <sys_id>2a5245dd4f422300c742e321a310c77f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Expenses" display_value="Expenses" name="x_218245_expense_expense" sys_domain="global" view="Default view">a63be3f44f621300c742e321a310c733</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-11-27 06:41:31</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:44:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_expense_cost</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-11-27 06:41:31</sys_created_on>
-            <sys_id>75c18d9d4f422300c742e321a310c746</sys_id>
+            <sys_created_on>2018-11-27 06:44:01</sys_created_on>
+            <sys_id>aa5245dd4f422300c742e321a310c77f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Expenses" display_value="Expenses" name="x_218245_expense_expense" sys_domain="global" view="Default view">a63be3f44f621300c742e321a310c733</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-11-27 06:41:31</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:44:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_notes</element>
-            <position>5</position>
+            <element>u_expense_item</element>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-11-27 06:41:31</sys_created_on>
-            <sys_id>f5c18d9d4f422300c742e321a310c746</sys_id>
+            <sys_created_on>2018-11-27 06:44:01</sys_created_on>
+            <sys_id>2e5245dd4f422300c742e321a310c77f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Expenses" display_value="Expenses" name="x_218245_expense_expense" sys_domain="global" view="Default view">a63be3f44f621300c742e321a310c733</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-11-27 06:41:31</sys_updated_on>
+            <sys_updated_on>2018-11-27 06:44:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
