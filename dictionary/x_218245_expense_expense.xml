@@ -19,6 +19,7 @@
         <element attributes="edge_encryption_enabled=true" label="Notes" max_length="50" name="u_notes" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_expense_category" dependent_on_field="u_expense_category" label="Sub Category" max_length="40" name="u_sub_category" type="string" use_dependent_field="true">
             <choice>
+                <element dependent_value="transport" label="Vehicle Maintenance" value="vehicle maintenance"/>
                 <element dependent_value="house" label="Groceries" sequence="0" value="groceries"/>
                 <element dependent_value="house" label="Maintenance" sequence="1" value="maintenance"/>
                 <element dependent_value="house" label="Maid" sequence="2" value="maid"/>

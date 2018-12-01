@@ -2,7 +2,7 @@
 <record_update table="sp_column">
     <sp_column action="INSERT_OR_UPDATE">
         <class_name/>
-        <order>2</order>
+        <order>4</order>
         <size>3</size>
         <size_lg/>
         <size_sm/>
@@ -10,15 +10,15 @@
         <sp_row display_value="1">f93397fd4f022300c742e321a310c78f</sp_row>
         <sys_class_name>sp_column</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-11-29 06:33:55</sys_created_on>
-        <sys_id>b9339bfd4f022300c742e321a310c7fe</sys_id>
+        <sys_created_on>2018-12-01 10:55:04</sys_created_on>
+        <sys_id>072266ae4f8a2300c742e321a310c7cc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>2</sys_name>
+        <sys_name>4</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
-        <sys_update_name>sp_column_b9339bfd4f022300c742e321a310c7fe</sys_update_name>
+        <sys_update_name>sp_column_072266ae4f8a2300c742e321a310c7cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-29 06:33:55</sys_updated_on>
+        <sys_updated_on>2018-12-01 10:55:04</sys_updated_on>
     </sp_column>
 </record_update>

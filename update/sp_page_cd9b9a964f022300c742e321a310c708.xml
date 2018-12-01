@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>add_expenses</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-30 15:47:48</sys_created_on>
+        <sys_id>cd9b9a964f022300c742e321a310c708</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>add_expenses</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sp_page_cd9b9a964f022300c742e321a310c708</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-01 11:43:43</sys_updated_on>
+        <title>Expense Monthly Report</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=cd9b9a964f022300c742e321a310c708"/>
+</record_update>
