@@ -3,7 +3,7 @@
     <sp_instance_link action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
-        <color>danger</color>
+        <color>info</color>
         <css/>
         <glyph>shopping-cart</glyph>
         <id/>
@@ -14,7 +14,7 @@
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description/>
+        <short_description>History of all Expenses</short_description>
         <size>md</size>
         <sp_column display_value="3">3933dbfd4f022300c742e321a310c701</sp_column>
         <sp_page display_value="sc_home">fe87a11147132100ba13a5554ee490b9</sp_page>
@@ -23,17 +23,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-11-29 06:44:40</sys_created_on>
         <sys_id>53a597714f422300c742e321a310c73e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Expenses</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sp_instance_link_53a597714f422300c742e321a310c73e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-30 15:56:41</sys_updated_on>
+        <sys_updated_on>2018-12-02 14:15:07</sys_updated_on>
         <title>Expenses</title>
         <type>url</type>
-        <url>x_218245_expense_expense_list.do</url>
+        <url>/expense?id=list&amp;table=x_218245_expense_expense</url>
         <widget_parameters><![CDATA[{
 	"link_template": {
 		"value": "Top Icon",

@@ -14,23 +14,23 @@
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description/>
+        <short_description>Current Month's Expense Report</short_description>
         <size>md</size>
         <sp_column display_value="4">072266ae4f8a2300c742e321a310c7cc</sp_column>
-        <sp_page display_value="add_expenses">cd9b9a964f022300c742e321a310c708</sp_page>
+        <sp_page display_value="expense_monthly_report">65e694cf4f022300c742e321a310c7ca</sp_page>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-01 10:55:20</sys_created_on>
         <sys_id>3a32ae6e4f8a2300c742e321a310c7d2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Expenses Monthly Report</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sp_instance_link_3a32ae6e4f8a2300c742e321a310c7d2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-01 11:44:26</sys_updated_on>
+        <sys_updated_on>2018-12-02 14:15:59</sys_updated_on>
         <title>Expenses Monthly Report</title>
         <type>page</type>
         <url>$pa_dashboard.do?sysparm_dashboard=e90725664f0a2300c742e321a310c7c5</url>

@@ -22,23 +22,26 @@
         <option_schema/>
         <public>false</public>
         <roles/>
-        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <script><![CDATA[(function() {  
+	
+	
+	/* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */
+	data.formWidget = { table: "x_218245_expense_expense", sys_id: "-1", hideRelatedLists: false };
+
+})();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-06 10:08:58</sys_created_on>
         <sys_id>c0aca1d14f625300c742e321a310c7b8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Add Expense</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sp_widget_c0aca1d14f625300c742e321a310c7b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-06 11:04:23</sys_updated_on>
-        <template><![CDATA[<div>
-<!-- your widget template -->
-  <a class="list-group-item" ng-click="c.selectItem($index)"	 ng-repeat="note in data.notes"></a>
-</div>]]></template>
+        <sys_updated_on>2018-12-02 13:14:38</sys_updated_on>
+        <template><![CDATA[<widget id="widget-form" options='data.formWidget'></widget>]]></template>
     </sp_widget>
 </record_update>
