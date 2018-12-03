@@ -35,20 +35,20 @@ $text-muted: #979797;
         <sc_catalog_page/>
         <sc_category_page/>
         <sp_chat_queue/>
-        <sp_rectangle_menu/>
+        <sp_rectangle_menu display_value="Expense Menu">fa34e19b4f062300c742e321a310c786</sp_rectangle_menu>
         <sqanda_knowledge_base/>
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-11-29 06:18:52</sys_created_on>
         <sys_id>3f5e073d4f022300c742e321a310c7a7</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Expenses</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sp_portal_3f5e073d4f022300c742e321a310c7a7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-29 07:12:34</sys_updated_on>
+        <sys_updated_on>2018-12-03 14:23:17</sys_updated_on>
         <theme display_value="Stock">79315153cb33310000f8d856634c9c4b</theme>
         <title>Expenses</title>
         <url_suffix>expense</url_suffix>

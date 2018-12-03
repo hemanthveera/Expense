@@ -55,5 +55,7 @@
                 <element dependent_value="misc" label="Other" sequence="33" value="other"/>
             </choice>
         </element>
+        <element label="Test Date" max_length="40" name="u_test_date" type="glide_date"/>
+        <element label="Test Date Time" max_length="40" name="u_test_date_time" type="glide_date_time"/>
     </element>
 </database>

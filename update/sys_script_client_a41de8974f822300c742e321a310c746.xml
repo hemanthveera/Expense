@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Move to Service Portal Home Page</description>
+        <field>u_expense_cost</field>
+        <global>true</global>
+        <messages/>
+        <name>Redirect Add Expense To Expense Portal</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	alert("has come to this");
+	top.window.setTimeout(fnRedirect,1000);
+	function fnRedirect() {
+		alert("trying to redirect");
+		this.window.location = "https://dev56374.service-now.com/expense";
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-03 10:20:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a41de8974f822300c742e321a310c746</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Redirect Add Expense To Expense Portal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_script_client_a41de8974f822300c742e321a310c746</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-03 13:59:11</sys_updated_on>
+        <table>x_218245_expense_expense</table>
+        <type>onSubmit</type>
+        <ui_type>1</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Refresh</description>
+        <field>u_expense_cost</field>
+        <global>true</global>
+        <messages/>
+        <name>Refresh Expense</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	
+	top.window.setTimeout(fnReload,2);
+	function fnReload() {
+		var tmpURL=this.location.href;
+		if(tmpURL.indexOf("#")<1){
+			this.location.reload();
+			top.window.location = tmpURL+"#";
+		}
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-03 10:32:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6103c1b4f822300c742e321a310c7ad</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Refresh Expense</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_script_client_f6103c1b4f822300c742e321a310c7ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-03 13:31:39</sys_updated_on>
+        <table>x_218245_expense_expense</table>
+        <type>onLoad</type>
+        <ui_type>1</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
