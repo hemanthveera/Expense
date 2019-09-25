@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_ui_title">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_title">
     <sys_ui_title action="INSERT_OR_UPDATE">
         <field_list>u_expense_category,u_expense_cost</field_list>
         <script><![CDATA[setExtras("Extra");]]></script>

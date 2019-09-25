@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_rest_message_fn_parameters">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
     <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
         <name>number</name>
         <rest_message_function display_value="CaseView">44a9b9b24fd31300c742e321a310c7d5</rest_message_function>

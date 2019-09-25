@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_portal">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables>$brand-primary: #428bca;
 $body-bg: #f0f3f4;
@@ -41,16 +40,17 @@ $text-muted: #979797;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-11-29 06:18:52</sys_created_on>
         <sys_id>3f5e073d4f022300c742e321a310c7a7</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Expenses</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sp_portal_3f5e073d4f022300c742e321a310c7a7</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-05 06:06:43</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-09-18 12:40:20</sys_updated_on>
         <theme display_value="Stock">79315153cb33310000f8d856634c9c4b</theme>
         <title>Expenses</title>
+        <ts_index_group display_value="portal_index_group">2c3e7d1513c93300e618bfd63244b0d7</ts_index_group>
         <url_suffix>expense</url_suffix>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=3f5e073d4f022300c742e321a310c7a7"/>
@@ -61,16 +61,18 @@ $text-muted: #979797;
         <content_type>image/jpeg</content_type>
         <encryption_context/>
         <file_name>icon</file_name>
+        <hash/>
         <image_height>225</image_height>
         <image_width>225</image_width>
         <size_bytes>10540</size_bytes>
         <size_compressed>9899</size_compressed>
+        <state>available</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-11-29 06:18:25</sys_created_on>
         <sys_id>43af4fb94f022300c742e321a310c70a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-29 06:18:25</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-09-18 23:40:01</sys_updated_on>
         <table_name>ZZ_YYsp_portal</table_name>
         <table_sys_id>3f5e073d4f022300c742e321a310c7a7</table_sys_id>
     </sys_attachment>
@@ -99,16 +101,18 @@ $text-muted: #979797;
         <content_type>image/jpeg</content_type>
         <encryption_context/>
         <file_name>logo</file_name>
+        <hash/>
         <image_height>225</image_height>
         <image_width>225</image_width>
         <size_bytes>10540</size_bytes>
         <size_compressed>9899</size_compressed>
+        <state>available</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-11-29 06:18:19</sys_created_on>
         <sys_id>69af4ff94f022300c742e321a310c704</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-29 06:18:19</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-09-25 12:13:14</sys_updated_on>
         <table_name>ZZ_YYsp_portal</table_name>
         <table_sys_id>3f5e073d4f022300c742e321a310c7a7</table_sys_id>
     </sys_attachment>

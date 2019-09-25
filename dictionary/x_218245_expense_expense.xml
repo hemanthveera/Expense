@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Expense" max_length="40" name="x_218245_expense_expense" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="3" default="house" label="Expense Category" mandatory="true" max_length="40" name="u_expense_category" type="string">
             <choice>
-                <element label="House" sequence="0" value="house"/>
-                <element label="Transport" sequence="1" value="transport"/>
-                <element label="Food &amp; Drinks" sequence="2" value="food and drinks"/>
-                <element label="Personal" sequence="3" value="personal"/>
-                <element label="Clothing" sequence="4" value="clothing"/>
-                <element label="Fun" sequence="5" value="fun"/>
-                <element label="Misc" sequence="6" value="misc"/>
+                <element inactive_on_update="false" label="House" sequence="0" value="house"/>
+                <element inactive="true" inactive_on_update="true" label="Maintenance" sequence="0" value="maintenance"/>
+                <element inactive_on_update="false" label="Transport" sequence="1" value="transport"/>
+                <element inactive_on_update="false" label="Food &amp; Drinks" sequence="2" value="food and drinks"/>
+                <element inactive_on_update="false" label="Personal" sequence="3" value="personal"/>
+                <element inactive_on_update="false" label="Clothing" sequence="4" value="clothing"/>
+                <element inactive_on_update="false" label="Fun" sequence="5" value="fun"/>
+                <element inactive_on_update="false" label="Misc" sequence="6" value="misc"/>
             </choice>
         </element>
         <element label="Cost" mandatory="true" max_length="15" name="u_expense_cost" type="decimal"/>
@@ -20,41 +20,43 @@
         <element attributes="barcode=true,edge_encryption_enabled=true" label="Notes" max_length="50" name="u_notes" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_expense_category" dependent_on_field="u_expense_category" label="Sub Category" max_length="40" name="u_sub_category" type="string" use_dependent_field="true">
             <choice>
-                <element dependent_value="personal" label="Medical" value="medical"/>
-                <element dependent_value="transport" label="Vehicle Maintenance" value="vehicle maintenance"/>
-                <element dependent_value="house" label="Groceries" sequence="0" value="groceries"/>
-                <element dependent_value="house" label="Maintenance" sequence="1" value="maintenance"/>
-                <element dependent_value="house" label="Maid" sequence="2" value="maid"/>
-                <element dependent_value="house" label="Electricity" sequence="3" value="electricity"/>
-                <element dependent_value="house" label="Phone" sequence="4" value="phone"/>
-                <element dependent_value="house" label="Internet" sequence="5" value="internet"/>
-                <element dependent_value="house" label="Cable" sequence="6" value="cable"/>
-                <element dependent_value="house" label="Mortage" sequence="7" value="mortage"/>
-                <element dependent_value="house" label="Repairs" sequence="8" value="repairs"/>
-                <element dependent_value="transport" label="Gas" sequence="9" value="gas"/>
-                <element dependent_value="transport" label="Public Transport" sequence="11" value="public transport"/>
-                <element dependent_value="transport" label="Taxi" sequence="12" value="taxi"/>
-                <element dependent_value="transport" label="Insurance" sequence="13" value="insurance"/>
-                <element dependent_value="transport" label="Fine" sequence="14" value="fine"/>
-                <element dependent_value="transport" label="Parking" sequence="15" value="parking"/>
-                <element dependent_value="food and drinks" label="Takeout" sequence="16" value="takeout"/>
-                <element dependent_value="food and drinks" label="Fastfood" sequence="17" value="fastfood"/>
-                <element dependent_value="food and drinks" label="Dine Out" sequence="18" value="dine out"/>
-                <element dependent_value="food and drinks" label="Café" sequence="19" value="café"/>
-                <element dependent_value="food and drinks" label="Drinks" sequence="20" value="drinks"/>
-                <element dependent_value="clothing" label="Clothes" sequence="21" value="clothes"/>
-                <element dependent_value="clothing" label="Shoes" sequence="22" value="shoes"/>
-                <element dependent_value="clothing" label="Accessories" sequence="23" value="accessories"/>
-                <element dependent_value="clothing" label="Bag" sequence="24" value="bag"/>
-                <element dependent_value="fun" label="Movies" sequence="25" value="movies"/>
-                <element dependent_value="fun" label="Recreation" sequence="26" value="recreation"/>
-                <element dependent_value="fun" label="Books" sequence="27" value="books"/>
-                <element dependent_value="fun" label="Games" sequence="28" value="games"/>
-                <element dependent_value="personal" label="Medical" sequence="29" value="medical"/>
-                <element dependent_value="personal" label="Personal Care" sequence="30" value="personal care"/>
-                <element dependent_value="personal" label="Subscriptions" sequence="31" value="subscriptions"/>
-                <element dependent_value="misc" label="Gift" sequence="32" value="gift"/>
-                <element dependent_value="misc" label="Other" sequence="33" value="other"/>
+                <element dependent_value="personal" inactive_on_update="false" label="Medical" value="medical"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Vehicle Maintenance" value="vehicle maintenance"/>
+                <element dependent_value="house" inactive_on_update="false" label="Groceries" sequence="0" value="groceries"/>
+                <element dependent_value="house" inactive="true" inactive_on_update="true" label="Mortgage" sequence="0" value="mortgage"/>
+                <element dependent_value="house" inactive_on_update="false" label="Maintenance" sequence="1" value="maintenance"/>
+                <element dependent_value="house" inactive="true" inactive_on_update="true" label="Milk" sequence="1" value="milk"/>
+                <element dependent_value="house" inactive_on_update="false" label="Maid" sequence="2" value="maid"/>
+                <element dependent_value="house" inactive_on_update="false" label="Electricity" sequence="3" value="electricity"/>
+                <element dependent_value="house" inactive_on_update="false" label="Phone" sequence="4" value="phone"/>
+                <element dependent_value="house" inactive_on_update="false" label="Internet" sequence="5" value="internet"/>
+                <element dependent_value="house" inactive_on_update="false" label="Cable" sequence="6" value="cable"/>
+                <element dependent_value="house" inactive_on_update="false" label="Mortage" sequence="7" value="mortage"/>
+                <element dependent_value="house" inactive_on_update="false" label="Repairs" sequence="8" value="repairs"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Gas" sequence="9" value="gas"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Public Transport" sequence="11" value="public transport"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Taxi" sequence="12" value="taxi"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Insurance" sequence="13" value="insurance"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Fine" sequence="14" value="fine"/>
+                <element dependent_value="transport" inactive_on_update="false" label="Parking" sequence="15" value="parking"/>
+                <element dependent_value="food and drinks" inactive_on_update="false" label="Takeout" sequence="16" value="takeout"/>
+                <element dependent_value="food and drinks" inactive_on_update="false" label="Fastfood" sequence="17" value="fastfood"/>
+                <element dependent_value="food and drinks" inactive_on_update="false" label="Dine Out" sequence="18" value="dine out"/>
+                <element dependent_value="food and drinks" inactive_on_update="false" label="Café" sequence="19" value="café"/>
+                <element dependent_value="food and drinks" inactive_on_update="false" label="Drinks" sequence="20" value="drinks"/>
+                <element dependent_value="clothing" inactive_on_update="false" label="Clothes" sequence="21" value="clothes"/>
+                <element dependent_value="clothing" inactive_on_update="false" label="Shoes" sequence="22" value="shoes"/>
+                <element dependent_value="clothing" inactive_on_update="false" label="Accessories" sequence="23" value="accessories"/>
+                <element dependent_value="clothing" inactive_on_update="false" label="Bag" sequence="24" value="bag"/>
+                <element dependent_value="fun" inactive_on_update="false" label="Movies" sequence="25" value="movies"/>
+                <element dependent_value="fun" inactive_on_update="false" label="Recreation" sequence="26" value="recreation"/>
+                <element dependent_value="fun" inactive_on_update="false" label="Books" sequence="27" value="books"/>
+                <element dependent_value="fun" inactive_on_update="false" label="Games" sequence="28" value="games"/>
+                <element dependent_value="personal" inactive_on_update="false" label="Medical" sequence="29" value="medical"/>
+                <element dependent_value="personal" inactive_on_update="false" label="Personal Care" sequence="30" value="personal care"/>
+                <element dependent_value="personal" inactive_on_update="false" label="Subscriptions" sequence="31" value="subscriptions"/>
+                <element dependent_value="misc" inactive_on_update="false" label="Gift" sequence="32" value="gift"/>
+                <element dependent_value="misc" inactive_on_update="false" label="Other" sequence="33" value="other"/>
             </choice>
         </element>
         <element label="Test Date" max_length="40" name="u_test_date" type="glide_date"/>

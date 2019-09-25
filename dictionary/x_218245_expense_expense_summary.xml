@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Expense Summary" max_length="40" name="x_218245_expense_expense_summary" type="collection">
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Calculate remaining daily budget&#13;&#10;&#9;var nowDate=new GlideDateTime();&#13;&#10;&#9;var totalDaysInCurMonth=nowDate.getDaysInMonthLocalTime();&#13;&#10;&#9;var split1=nowDate.getDisplayValue().toString().split(&quot; &quot;);&#13;&#10;&#9;var split2=split1[0].split(&quot;-&quot;);&#13;&#10;&#9;var curDay=split2[2];&#13;&#10;&#9;var remainingDays=totalDaysInCurMonth-curDay;&#13;&#10;&#9;var dailyRemainingBudget=0;&#13;&#10;&#9;var allowedDailyBudget=((current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays).toFixed(2);&#13;&#10;&#9;var v_ga = new GlideRecord('x_218245_expense_expense');&#13;&#10;&#9;//var v_expense_date= new GlideDate();&#13;&#10;&#9;//v_expense_date.setValue(split1[0]);&#13;&#10;&#9;var v_sum=0.00;&#13;&#10;&#9;//var vMonth=v_expense_date.getMonthNoTZ();&#13;&#10;&#9;//var vYear=v_expense_date.getYearNoTZ();&#13;&#10;&#9;v_ga.addEncodedQuery(&quot;u_expense_dateONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()&quot;);&#13;&#10;&#9;v_ga.query();&#13;&#10;&#9;while(v_ga.next()){&#13;&#10;&#9;&#9;v_sum=v_sum+parseFloat(v_ga.getValue('u_expense_cost'));&#13;&#10;&#9;}&#13;&#10;&#9;dailyRemainingBudget=allowedDailyBudget-v_sum;&#13;&#10;&#9;if(dailyRemainingBudget&lt;0){&#13;&#10;&#9;&#9;dailyRemainingBudget=0;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;&#13;&#10;&#9;return dailyRemainingBudget;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Daily Remaining Budget" max_length="40" name="u_daily_remaining_budget" read_only="true" type="float" virtual="true"/>
         <element default="50000" label="Monthly Limit" max_length="40" name="u_expense_monthly_limit" type="float"/>
@@ -7,6 +6,7 @@
         <element label="Expense Month and Year" max_length="40" name="u_expense_month_year" type="glide_date"/>
         <element default="60000" label="Salary" max_length="40" name="u_expense_salary" type="float"/>
         <element default="0" label="Spent" max_length="40" name="u_expense_spent" read_only="true" type="float"/>
+        <element label="Monthly Remaining Budget" max_length="40" name="u_monthly_remaining_budget" read_only="true" type="float"/>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var gdt= new GlideDate();&#10;&#9;gdt.setValue(current.u_expense_month_year);&#10;&#9;return gdt.getByFormat(&quot;MMM-YYYY&quot;); &#10;&#10;})(current);" display="true" label="Month &amp; Year" max_length="100" name="u_month_year" read_only="true" type="string" virtual="true"/>
     </element>
 </database>
