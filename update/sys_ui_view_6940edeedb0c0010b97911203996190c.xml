@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>pa_new_tab_17</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-25 12:23:53</sys_created_on>
+        <sys_id>6940edeedb0c0010b97911203996190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pa_new_tab_17</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_ui_view_6940edeedb0c0010b97911203996190c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-25 12:23:53</sys_updated_on>
+        <title>Pa_new_tab_17</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

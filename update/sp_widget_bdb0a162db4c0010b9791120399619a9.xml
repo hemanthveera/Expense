@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, $rootScope, $timeout, spUtil, $location) {
+	var c = this;
+	
+	/**
+	 * Intercept message consumption cycle
+	 * @desc This is done to stop the display of irrelevant messages to end users during registration
+	 **/	
+	
+	// Before anything, we need to get the context which we will use
+	var temp = angular.element('#uiNotificationContainer').scope(); 
+	
+	// Then, capture the element responsible for notifications, including its Angular context
+	var el = angular.element( document.querySelector('#uiNotificationContainer') );
+	
+	// Put a clone of that onto the bottom of the body so we have the context extant on the DOM
+	$('body').append(el.clone());
+	
+	// Hide both instances of the element
+	$('#uiNotificationContainer').each(function() {
+		$(this).hide();
+	});
+	
+	// Create a string for our shammed directive contents, taken from the spNotifications directive
+	var mockUi = '<div id="uiNotificationContainer" ><div ng-repeat="m in c.notifications track by $index" ng-if="m.message.indexOf(\'Adding Role\') < 0" class="alert" ng-class="m.type == \'error\' ? \'alert-danger\' : \'alert-success\'">\
+								<span ng-if="m.type == \'error\' " class="fa fa-exclamation-triangle m-r-xs"></span>\
+								<span ng-bind-html="::m.message"></span><button ng-if="::$first" class="btn btn-link fa fa-close dismiss-notifications" ng-click="::c.dismissNotificationsButton()" aria-label="Close Notification"></button></div></div>';	
+	
+	// Compile the string into actual functional Angular and HTML
+	var mockUiCompiled = $compile(mockUi)(temp);		
+	
+	// Replace the original notification container with our shammed one and show that instance
+	$('#uiNotificationContainer').first().replaceWith(mockUiCompiled).show();			
+	/** Business as usual ... **/
+	
+	$scope.minLength=6;
+	c.captchaVerified = false;
+	c.policy = false;
+	c.country = c.data.country;
+	$scope.emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+	c.data.emailLabel = c.data.primaryEmailLabel;
+	c.data.emailLabelPlaceholder = c.data.primaryEmailLabel.toLowerCase();
+	$scope.diplayRegistrationCode = false;
+	$scope.diplayBankDetails = false;
+	$scope.displayAddress = false;
+	$scope.handleTypeChange = function(){
+	
+		if(c.registration_type=='individual_contact')
+			{
+				c.data.emailLabel = c.data.primaryEmailLabel;
+				c.data.emailLabelPlaceholder = c.data.primaryEmailLabel.toLowerCase();
+				$scope.diplayRegistrationCode = false;
+				$scope.diplayBankDetails = true;
+				$scope.displayAddress = true;
+				c.code = '';
+			}
+		else if((c.registration_type=='law_firm'))
+		{
+			c.data.emailLabel = c.data.businessEmailLabel;
+			c.data.emailLabelPlaceholder = c.data.businessEmailLabel.toLowerCase();
+			$scope.diplayBankDetails = false;
+			$scope.diplayRegistrationCode = true;
+			$scope.displayAddress = false; 
+			c.account_name ='';
+			c.account_number = '';
+			c.street = '';
+			c.country = '';
+			c.postal_code = '';
+			c.state = '';
+			c.city = '';
+			c.bsb = '';
+		}
+		
+		
+	}
+	
+	c.toggleCheckbox = function(elementId) {
+		var checked = c[elementId];		
+		angular.element("#" + elementId).attr('aria-checked', !!checked);
+	};
+	
+	CustomEvent.observe('sn_csm_captcha_verified', function(obj) {
+		c.captchaVerified = obj.captchaVerified;
+		c.grc = obj.grc;		
+		scope.$apply();	
+	});
+	
+	c.showSubmit = function(){
+	
+		var registrationCodeFlag = c.registration_type=='law_firm' ? c.code : c.registration_type=='individual_contact';
+	return false;
+		
+		if(c.data.enableCaptcha=='false') {
+		
+			return !( c.first_name  &&  c.policy == true  && c.last_name && c.email && c.registration_type && registrationCodeFlag && c.validaBankDetails() && c.validAddressDetails());
+		}
+		else
+			return !( c.first_name  &&  c.policy == true  && c.captchaVerified == true && c.last_name && c.email && c.grc && c.registration_type && registrationCodeFlag && c.validaBankDetails() && c.validAddressDetails());
+
+	};
+	
+
+	c.validaBankDetails = function(){
+		if(c.registration_type=='individual_contact')
+			{
+				return (c.account_name && c.bsb && c.account_number);
+			}
+		else
+			return true;
+	};
+	c.validAddressDetails = function(){
+
+		if(c.registration_type=='individual_contact')
+			{
+				return (c.street &&	c.country && c.postal_code && c.state && c.city );
+			}
+		else
+			return true;
+		
+	};
+	
+	c.action = function() {
+		c.testData="TESTCLIENT";
+		c.data.action = 'register';
+		c.data.first_name = c.first_name;
+		c.data.last_name = c.last_name;
+		c.data.email = c.email;
+		c.data.code = c.code;
+		c.data.grc = c.grc;
+		c.data.registration_type = c.registration_type;
+		c.data.account_name = c.account_name;
+		c.data.bsb = c.bsb;
+		c.data.account_number = c.account_number;
+		c.data.street = c.street;
+		c.data.country = c.country;
+		c.data.postal_code = c.postal_code;
+		c.data.state = c.state;
+		c.data.city = c.city;
+		
+		c.server.update().then(function(response){	
+			var data = response["result"];
+			if (response.status == 'success') {				
+				
+				c.success = response["message"];
+			} else if (response.status == 'error') {
+				c.success = 'There was an error processing your request';
+			}
+		});
+	};
+	
+	$scope.registrationInit = function () {
+	};
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.form_link a {&#13;
+  	text-decoration: underline&#13;
+}&#13;
+&#13;
+input[type="checkbox"]:focus, .form_link a:focus {&#13;
+		outline: auto -webkit-focus-ring-color !important&#13;
+}&#13;
+&#13;
+.hide-label{&#13;
+ visibility: hidden;&#13;
+}&#13;
+.red-text{&#13;
+  color:red;&#13;
+}&#13;
+.radio-label&#13;
+{&#13;
+	padding-top: 7px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>This is clone of the OOB Customer Registration widgets,since we are not making the registration code as mandatory during customer registration.</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Test ACB</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function($sp, input, data, options) {
+	"use strict";
+	data.testVar="TEST2019092510561";
+	data.status = 'error';
+	//gs.addInfoMessage("Test"+input.first_name);
+	if(input){
+		gs.addInfoMessage("Value exists dude");
+	}
+	else{
+		gs.addInfoMessage("Value does not exist");
+	}
+	//gs.addInfoMessage("TEST: "+input.first_name);
+	gs.addInfoMessage("TEST HTML"+data.testVar)
+	data.is_logged_in = gs.getSession().isLoggedIn();
+	data.sys_id = '-1';
+	data.country = gs.getProperty('acb.default.country');//AUSTRALIA
+	data.primaryEmailLabel = gs.getMessage('Email');
+	data.businessEmailLabel = gs.getMessage('Business Email');
+	data.captch_url= 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=' + gs.getSession().getLanguage() ;
+	data.enableCaptcha = gs.getProperty('sn_customerservice.captchaEnabled');
+	if (input && input.action == 'register' && input.first_name && input.last_name && input.email) {
+		var trueCaptcha = new global.CSManagementUtils().verifyCaptcha(input.grc);
+		gs.addInfoMessage("TEST INPUT: "+input.first_name);
+		if(trueCaptcha){
+	
+			var result = {};
+			var gr = new GlideRecord('sn_customerservice_registration');
+			gr.initialize();
+			gr.setValue('first_name', input.first_name);
+			gr.setValue('last_name', input.last_name);
+			gr.setValue('email', input.email);
+			if(input.code)
+			gr.setValue('registration_code', input.code);
+			var sys_id = gr.insert();
+		
+			
+		
+				
+			if (!gs.nil(sys_id)) {
+				data.sys_id = sys_id;
+				if(input.registration_type=='individual_contact'){
+					var customerRegistrationGR = new GlideRecord('sn_customerservice_registration');
+					if(customerRegistrationGR.get(sys_id)){
+					
+					  if(input.account_name && input.account_number && input.bsb){
+								  var bankDetailsGR = new GlideRecord('u_banking_details');
+							    bankDetailsGR.initialize();
+							    //new PlatformEncryptableChoiceFields().process('u_banking_details')
+			               bankDetailsGR.setValue('u_user',customerRegistrationGR.user);
+							       var sysId = bankDetailsGR.insert();
+				             //encrypted fields
+										 var bankDetailsGRObject = {};
+										 bankDetailsGRObject.u_account_name=input.account_name.toString();
+                     bankDetailsGRObject.u_bsb = input.bsb;                    
+										 bankDetailsGRObject.u_account_number = input.account_number.toString();
+							       bankDetailsGRObject.sys_id = sysId;
+                     new global.ACB_Encryption().updateBankDetails(bankDetailsGRObject);
+							
+									
+						}
+						if(input.street &&	input.country && input.postal_code && input.state && input.city ){
+							   var locationGR = new GlideRecord('cmn_location');
+							       locationGR.initialize();
+							       locationGR.setValue('street',input.street);
+							       locationGR.setValue('city',input.city);
+							       locationGR.setValue('state',input.state);
+							       locationGR.setValue('country',input.country);
+							       locationGR.setValue('zip',input.postal_code);
+							       locationGR.setValue('primary',true);
+							       locationGR.setValue('contact',customerRegistrationGR.user);
+							       locationGR.insert();
+							
+						}
+					
+				}
+			}
+				data.status = "success";
+				data.message = gs.getMessage("Your request has been submitted and is pending review. You will receive an email when your request is processed.");
+			} else {
+				data.status = "error";
+			}
+			data.result = result;
+			return data;
+		}else{
+			gs.addErrorMessage(gs.getMessage('Please verify the security code'));
+			data.status = "error";
+			return data;
+		}
+		
+	}
+	
+})($sp, input, data, options);
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-25 12:25:50</sys_created_on>
+        <sys_id>bdb0a162db4c0010b9791120399619a9</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Test ACB</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sp_widget_bdb0a162db4c0010b9791120399619a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-25 13:55:43</sys_updated_on>
+        <template><![CDATA[<div  class="panel b" ng-init="registrationInit()">
+  <!-- header -->
+  <div class="panel-heading bg-primary">
+    <h3 class="panel-title">${Customer Registration}</h3>
+  </div>
+  <!-- body -->
+  <div class="panel-body" >
+    <form ng-submit="$event.preventDefault()" class="form-horizontal" name="inquiryForm">
+      <!-- Registering as input-->
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="first_name">${Registering As}</label>
+       <label class="col-sm-3 radio-label " for="radios-0">
+      <input name="radios" id="radios-0" value="individual_contact" ng-change="handleTypeChange()" ng-model="c.registration_type" type="radio">
+      ${Individual applicant}
+    </label>
+    <label class="col-sm-2 radio-label" for="radios-1">
+    	<input name="radios" id="radios-1" ng-model="c.registration_type" ng-change="handleTypeChange()"  value="law_firm" type="radio">
+      	${Law firm}
+    </label>
+      </div>
+       <!-- First Name input-->
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="first_name">${First Name}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.first_name" id="first_name" name="first_name" placeholder="${First name}" class="form-control">
+        </div>
+      </div>
+      <!-- Last Name input-->
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="last_name">${Last Name}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.last_name" id="last_name" name="last_name" placeholder="${Last name}" class="form-control">
+        </div>
+      </div>
+      <!-- Business Email input-->
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="email">{{c.data.emailLabel}}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.email" id="email" ng-pattern="emailFormat" name="email" placeholder="${Email}" class="form-control">
+          <span class="red-text" ng-if="inquiryForm.email.$error.required && inquiryForm.email.$dirty">Email is a required field</span>
+          <span class="red-text" ng-show="inquiryForm.email.$error.pattern">Invalid Email</span>
+        </div>
+      </div>
+      <!--Street-->
+      <div class="form-group" ng-show="displayAddress">
+        <label class="col-sm-3 control-label" for="street">${Street}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.street" id="street" name="street" placeholder="${Street}" class="form-control">
+        </div>
+      </div>      
+      <!--City-->
+      <div class="form-group" ng-show="displayAddress">
+        <label class="col-sm-3 control-label" for="city">${City / Town}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.city" id="city" name="city" placeholder="${City / Town}" class="form-control">
+        </div>
+      </div>      
+      <!--State-->
+      <div class="form-group" ng-show="displayAddress">
+        <label class="col-sm-3 control-label" for="state">${State}</label>
+        <div class="col-sm-6">
+          <select ng-model="c.state" id="state" name="state" ng-init="c.state='VIC'"class="form-control">
+            <option value="VIC">Victoria</option>
+            <option disabled>---</option>
+            <option value="ACT">Australian Capital Territory</option>            
+            <option value="NSW">New South Wales</option>
+            <option value="NTE">Northern Territory</option>
+            <option value="QLD">Queensland</option>            
+            <option value="SAU">South Australia</option>
+            <option value="TAS">Tasmania</option>
+            <option value="WAU">Western Australia</option>
+          </select>
+        </div>
+      </div>
+      <!--Postal Code-->
+      <div class="form-group" ng-show="displayAddress">
+        <label class="col-sm-3 control-label" for="postal_code">${Postal Code}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.postal_code" id="postal_code" name="postal_code" placeholder="${Postal Code}" class="form-control">
+         </div>
+      </div>
+      <!--Country-->
+      <div class="form-group" ng-show="displayAddress">
+        <label class="col-sm-3 control-label" for="country">${Country}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.country" id="country" name="country" placeholder="${Country}" class="form-control">
+         </div>
+      </div>
+      
+     <!-- Registration Code input-->
+      <div class="form-group" ng-show="diplayBankDetails" >
+        <label class="col-sm-3 control-label" for="code">${Account Name}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.account_name" id="account_name" name="account_name" placeholder="${Account Name}" class="form-control">
+        </div>
+      </div>
+      <div class="form-group" ng-show="diplayBankDetails" >
+        <label class="col-sm-3 control-label" for="code">${BSB}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.bsb" id="bsb" name="bsb" placeholder="${BSB}" ng-pattern="/^(\d)+$/" ng-minlength="minLength" class="form-control">
+           <span class="red-text" ng-show="!inquiryForm.bsb.$valid">This must be 6 digit number.</span>
+        </div>
+      </div>
+      
+      <div class="form-group" ng-show="diplayBankDetails" >
+        <label class="col-sm-3 control-label" for="code">${Account number}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.account_number" id="account_number" name="account_number" placeholder="${Account number}" class="form-control">
+        </div>
+      </div>
+      
+      <div class="form-group" ng-show="diplayRegistrationCode" >
+        <label class="col-sm-3 control-label" for="code">${Registration code}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.code" id="code" name="code" placeholder="${Your company registration code}" class="form-control">
+        </div>
+      </div>
+      
+      <!-- Privacy Policy & Terms conditions -->
+      <div class="form-group col-sm-12 input-group-checkbox">
+        <div class="col-sm-12 form_link" tabindex="0">
+          <label class="col-sm-3 control-label hide-label" for="checkbox_agree">Privacy Policy</label>
+          <input ng-model="c.policy" ng-change="c.toggleCheckbox('policy')" id="policy" class="checkbox_agree" type="checkbox" name="policy">
+          I agree to the <a href="/acb/?id=acb_terms_of_use" target="_blank">Terms of Use</a>          
+        </div>
+      </div>      
+      <!-- Google Recaptcha -->
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+      <script type="text/javascript">
+        var onloadCallback = function () {
+          var captchaVerified;
+          var captchaWidget;
+
+          var verifyCallback = function (grc) {
+            if ((grc == "") || (grc == undefined))
+              captchaVerified = false;
+            else
+              captchaVerified = true;
+
+            jQuery("#captchaVerified").attr("value", captchaVerified);
+
+            CustomEvent.fireAll('sn_csm_captcha_verified', {
+              captchaVerified: captchaVerified,
+              grc: grc
+              });
+            };
+
+            captchaWidget = grecaptcha.render('html_element', {
+              'sitekey': "6LeiwAYTAAAAAAscPMJuMno9Tbwt3KXqSEPmQhu2",
+              'callback': verifyCallback,
+              'theme': 'light',
+              'expired-callback': captchaExpired
+            });
+          };
+
+          var captchaExpired = function () {
+            captchaVerified = false;
+            jQuery("#captchaVerified").attr("value", captchaVerified);
+
+            CustomEvent.fireAll('sn_csm_captcha_verified', {
+            captchaVerified: captchaVerified,
+            grc: null
+          });
+        };
+      </script>
+      
+      <div ng-if="data.enableCaptcha == 'true'" id="captcha_form_group" class="form-group">
+        
+        <input ng-model="c.captchaVerified" type="checkbox" name="captchaVerified" id="captchaVerified" style="display:none;" class="form-control">
+        <label class="col-sm-3 control-label">${Security Code}</label>
+        <div class="col-sm-9">
+					<form action="?" method="POST">
+						<div class="g-recaptcha" id="html_element"></div>
+						<span class="help-block" id="retype_captcha"></span>
+					</form>
+				</div>
+    	</div>
+			<div>
+				<button type="submit" 
+					ng-disabled="data.status == 'success' || c.showSubmit()"
+					ng-click="c.action()"
+					class="btn btn-primary">${Submit}</button>
+			</div>
+      <div>
+        <label value="TESTValue" id="server_testvar">Server {{::data.testVar}}</label>
+        <label value="TESTValue" id="client_testvar">Client {{c.testData}}</label>
+      </div>
+    </form>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

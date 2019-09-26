@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">77d0a562db4c0010b979112039961942</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-25 12:26:31</sys_created_on>
+        <sys_id>f3d0a562db4c0010b979112039961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sp_column_f3d0a562db4c0010b979112039961944</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-25 12:26:31</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense">d6f05f304f221300c742e321a310c74b</application>
+        <file_path/>
+        <instance_id>7c5e5d9adb9f9b807d8cf22ebf96196b</instance_id>
+        <instance_name>dev65309</instance_name>
+        <name>sp_column_f3d0a562db4c0010b979112039961944</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">77d0a562db4c0010b979112039961942</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-09-25 12:26:31</sys_created_on><sys_id>f3d0a562db4c0010b979112039961944</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package><sys_policy/><sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope><sys_update_name>sp_column_f3d0a562db4c0010b979112039961944</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-09-25 12:26:31</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>231107377</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>f14efcde4f031300c742e321a310c7a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-25 12:26:31</sys_created_on>
+        <sys_id>88e0a562db4c0010b979112039961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d686326200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-25 12:26:31</sys_updated_on>
+        <type>Column</type>
+        <update_guid>80e0a562ac4c001057aa21ff9af8b945</update_guid>
+        <update_guid_history>80e0a562ac4c001057aa21ff9af8b945:231107377</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2019-09-26 05:31:15">bcef73e2db484010b9791120399619d8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-26 00:01:15</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>3a51a841b1194598a99ad79a2af8ca40</sys_id>
+        <sys_metadata>f3d0a562db4c0010b979112039961944</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_scope_delete display_value="">1fbf4716aba442849f5e3a83cebcff90</sys_scope_delete>
+        <sys_update_name>sp_column_f3d0a562db4c0010b979112039961944</sys_update_name>
+        <sys_update_version display_value="sp_column_f3d0a562db4c0010b979112039961944">88e0a562db4c0010b979112039961945</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-26 00:01:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
