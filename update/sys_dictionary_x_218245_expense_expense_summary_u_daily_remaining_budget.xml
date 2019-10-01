@@ -6,32 +6,43 @@
         <attributes/>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Calculate remaining daily budget
-	var nowDate=new GlideDateTime();
-	var totalDaysInCurMonth=nowDate.getDaysInMonthLocalTime();
-	var split1=nowDate.getDisplayValue().toString().split(" ");
-	var split2=split1[0].split("-");
-	var curDay=split2[2];
-	var remainingDays=totalDaysInCurMonth-curDay;
+	
+	//declare variables
 	var dailyRemainingBudget=0;
-	var allowedDailyBudget=((current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays).toFixed(2);
+	
+	//Calculate remaining days in the month
+	var nowDate=new GlideDateTime();
+	//First get total days in current month
+	var totalDays=nowDate.getDaysInMonthLocalTime();
+	
+	//Get current day of the month
+	var curDay=nowDate.getDayOfMonthLocalTime();
+	
+	//Calculate remaining days in current month
+	var remainingDays=totalDays-(curDay-1); //-1 is because we want to include current day aswell
+	
+	
+	
+	
 	var v_ga = new GlideRecord('x_218245_expense_expense');
-	//var v_expense_date= new GlideDate();
-	//v_expense_date.setValue(split1[0]);
-	var v_sum=0.00;
-	//var vMonth=v_expense_date.getMonthNoTZ();
-	//var vYear=v_expense_date.getYearNoTZ();
 	v_ga.addEncodedQuery("u_expense_dateONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()");
 	v_ga.query();
+	var todaySpent=0;
+	var rowCount=v_ga.getRowCount();
 	while(v_ga.next()){
-		v_sum=v_sum+parseFloat(v_ga.getValue('u_expense_cost'));
+		todaySpent=todaySpent+v_ga.u_expense_cost;
 	}
-	dailyRemainingBudget=allowedDailyBudget-v_sum;
-	if(dailyRemainingBudget<0){
-		dailyRemainingBudget=0;
+	//gs.info("TEST2019010115082: todaySpent:"+todaySpent+", daily: "+current.u_daily_remaining_budget);
+	dailyRemainingBudget=((current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays)-todaySpent;
+	/*
+	if(todaySpent==0){
+		//First get Total daily budget per day for the month
+		dailyRemainingBudget=(current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays;
 	}
-	
+	else{
+		dailyRemainingBudget=current.u_daily_remaining_budget-todaySpent;
+	}
+	*/
 	
 	return dailyRemainingBudget;  // return the calculated value
 
@@ -79,14 +90,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-02 15:16:39</sys_created_on>
         <sys_id>60a760cb4f422300c742e321a310c708</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Daily Remaining Budget</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sys_dictionary_x_218245_expense_expense_summary_u_daily_remaining_budget</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-02 15:59:52</sys_updated_on>
+        <sys_updated_on>2019-10-01 05:16:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -5,14 +5,46 @@
         <array_denormalized>false</array_denormalized>
         <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	
+	//declare variables
+	var dailyRemainingBudget=0;
+	/*
+	//Calculate remaining days in the month
+	var nowDate=new GlideDateTime();
+	//First get total days in current month
+	var totalDays=nowDate.getDaysInMonthLocalTime();
+	
+	//Get current day of the month
+	var curDay=nowDate.getDayOfMonthLocalTime();
+	
+	//Calculate remaining days in current month
+	var remainingDays=totalDays-(curDay-1); //-1 is because we want to include current day aswell
+	
+	var todayTotal=0;
+	var v_ga = new GlideRecord('x_218245_expense_expense');
+	v_ga.addEncodedQuery("u_expense_dateONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()");
+	v_ga.query();
+	var rowCount=v_ga.getRowCount();
+	while(v_ga.next()){
+		todayTotal=todayTotal+v_ga.u_expense_cost;
+	}
+	
+	if((current.u_monthly_remaining_budget==0)||(todayTotal==0)){
+		dailyRemainingBudget=(current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays;
+	}
+	*/
+	return dailyRemainingBudget;
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Monthly Remaining Budget</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>0</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -49,14 +81,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-09-04 03:48:59</sys_created_on>
         <sys_id>02016323dbe33300b979112039961920</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Monthly Remaining Budget</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sys_dictionary_x_218245_expense_expense_summary_u_monthly_remaining_budget</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-04 03:48:59</sys_updated_on>
+        <sys_updated_on>2019-10-01 03:41:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
