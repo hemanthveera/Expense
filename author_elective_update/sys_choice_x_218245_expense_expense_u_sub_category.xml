@@ -157,6 +157,44 @@
             <element>u_sub_category</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Gas</label>
+            <language>en</language>
+            <name>x_218245_expense_expense</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-30 01:27:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d2f247abdb15c010b9791120399619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-30 01:27:31</sys_updated_on>
+            <value>gas</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>house</dependent_value>
+            <element>u_sub_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Water</label>
+            <language>en</language>
+            <name>x_218245_expense_expense</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-30 01:27:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9ee247abdb15c010b9791120399619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-30 01:27:15</sys_updated_on>
+            <value>water</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>house</dependent_value>
+            <element>u_sub_category</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Phone</label>
             <language>en</language>
             <name>x_218245_expense_expense</name>

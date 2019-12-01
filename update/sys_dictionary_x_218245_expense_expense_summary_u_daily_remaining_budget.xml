@@ -32,17 +32,16 @@
 	while(v_ga.next()){
 		todaySpent=todaySpent+v_ga.u_expense_cost;
 	}
-	//gs.info("TEST2019010115082: todaySpent:"+todaySpent+", daily: "+current.u_daily_remaining_budget);
-	dailyRemainingBudget=((current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays)-todaySpent;
-	/*
-	if(todaySpent==0){
-		//First get Total daily budget per day for the month
-		dailyRemainingBudget=(current.u_expense_monthly_limit-current.u_expense_spent)/remainingDays;
+	
+	var expensesTillYesterday=0;
+	if(current.u_expense_spent<todaySpent){
+		expensesTillYesterday=0; //This scenario should never occur, it's an extra check
 	}
 	else{
-		dailyRemainingBudget=current.u_daily_remaining_budget-todaySpent;
+		expensesTillYesterday=(current.u_expense_spent-todaySpent);
 	}
-	*/
+	dailyRemainingBudget=((current.u_expense_monthly_limit-expensesTillYesterday)/remainingDays)-todaySpent;
+	
 	
 	return dailyRemainingBudget;  // return the calculated value
 
@@ -90,14 +89,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-02 15:16:39</sys_created_on>
         <sys_id>60a760cb4f422300c742e321a310c708</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Daily Remaining Budget</sys_name>
         <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
         <sys_update_name>sys_dictionary_x_218245_expense_expense_summary_u_daily_remaining_budget</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-01 05:16:06</sys_updated_on>
+        <sys_updated_on>2019-10-01 05:50:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

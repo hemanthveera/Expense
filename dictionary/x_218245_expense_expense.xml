@@ -28,6 +28,8 @@
                 <element dependent_value="house" inactive="true" inactive_on_update="true" label="Milk" sequence="1" value="milk"/>
                 <element dependent_value="house" inactive_on_update="false" label="Maid" sequence="2" value="maid"/>
                 <element dependent_value="house" inactive_on_update="false" label="Electricity" sequence="3" value="electricity"/>
+                <element dependent_value="house" inactive_on_update="false" label="Gas" sequence="3" value="gas"/>
+                <element dependent_value="house" inactive_on_update="false" label="Water" sequence="3" value="water"/>
                 <element dependent_value="house" inactive_on_update="false" label="Phone" sequence="4" value="phone"/>
                 <element dependent_value="house" inactive_on_update="false" label="Internet" sequence="5" value="internet"/>
                 <element dependent_value="house" inactive_on_update="false" label="Cable" sequence="6" value="cable"/>
