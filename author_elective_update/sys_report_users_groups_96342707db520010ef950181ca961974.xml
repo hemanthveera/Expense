@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">de342707db520010ef950181ca961973</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 07:38:37</sys_created_on>
+        <sys_id>96342707db520010ef950181ca961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>de342707db520010ef950181ca961973</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_update_name>sys_report_users_groups_96342707db520010ef950181ca961974</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 07:38:37</sys_updated_on>
+        <user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense">d6f05f304f221300c742e321a310c74b</application>
+        <file_path/>
+        <instance_id>ce6c57a3db3b9fc07e55d5b0cf9619b3</instance_id>
+        <instance_name>dev70433</instance_name>
+        <name>sys_report_users_groups_96342707db520010ef950181ca961974</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">de342707db520010ef950181ca961973</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 07:38:37</sys_created_on><sys_id>96342707db520010ef950181ca961974</sys_id><sys_mod_count>0</sys_mod_count><sys_name>de342707db520010ef950181ca961973</sys_name><sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package><sys_policy/><sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope><sys_update_name>sys_report_users_groups_96342707db520010ef950181ca961974</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 07:38:37</sys_updated_on><user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-1159062449</payload_hash>
+        <record_name>de342707db520010ef950181ca961973</record_name>
+        <reverted_from/>
+        <source>f14efcde4f031300c742e321a310c7a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 07:38:37</sys_created_on>
+        <sys_id>9e342707db520010ef950181ca961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fb2708a390000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 07:38:37</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>963427071552001008be7bf79a0f7975</update_guid>
+        <update_guid_history>963427071552001008be7bf79a0f7975:-1159062449</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 07:39:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>3bb024744cd64829a10d96fcf12fa621</sys_id>
+        <sys_metadata>96342707db520010ef950181ca961974</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>de342707db520010ef950181ca961973</sys_name>
+        <sys_package display_value="Expense" source="x_218245_expense">d6f05f304f221300c742e321a310c74b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense">d6f05f304f221300c742e321a310c74b</sys_scope>
+        <sys_scope_delete display_value="">1fbf4716aba442849f5e3a83cebcff90</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_96342707db520010ef950181ca961974</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_96342707db520010ef950181ca961974">9e342707db520010ef950181ca961975</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 07:39:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
