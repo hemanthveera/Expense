@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_daily_remaining_budget</element>
-            <list_id display_value="x_218245_expense_expense_summary" element="NULL" name="x_218245_expense_expense_summary" parent="NULL" relationship="NULL" sys_domain="global" view="5b53f4c34f822300c742e321a310c7bb">d353f4c34f822300c742e321a310c7bc</list_id>
+            <list_id display_value="x_218245_expense_expense_summary" element="NULL" name="x_218245_expense_expense_summary" parent="NULL" relationship="NULL" sys_domain="global" view="313a43cd1ba300103b9040c6cc4bcbcf">d353f4c34f822300c742e321a310c7bc</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_expense_spent</element>
-            <list_id display_value="x_218245_expense_expense_summary" element="NULL" name="x_218245_expense_expense_summary" parent="NULL" relationship="NULL" sys_domain="global" view="5b53f4c34f822300c742e321a310c7bb">d353f4c34f822300c742e321a310c7bc</list_id>
+            <list_id display_value="x_218245_expense_expense_summary" element="NULL" name="x_218245_expense_expense_summary" parent="NULL" relationship="NULL" sys_domain="global" view="313a43cd1ba300103b9040c6cc4bcbcf">d353f4c34f822300c742e321a310c7bc</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_expense_monthly_savings</element>
-            <list_id display_value="x_218245_expense_expense_summary" element="NULL" name="x_218245_expense_expense_summary" parent="NULL" relationship="NULL" sys_domain="global" view="5b53f4c34f822300c742e321a310c7bb">d353f4c34f822300c742e321a310c7bc</list_id>
+            <list_id display_value="x_218245_expense_expense_summary" element="NULL" name="x_218245_expense_expense_summary" parent="NULL" relationship="NULL" sys_domain="global" view="313a43cd1ba300103b9040c6cc4bcbcf">d353f4c34f822300c742e321a310c7bc</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -70,7 +70,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-12-02 16:07:55</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt1753f4c34f822300c742e321a310c7b5" name="RPT1753f4c34f822300c742e321a310c7b5">5b53f4c34f822300c742e321a310c7bb</view>
+            <view display_value="Rpt1753f4c34f822300c742e321a310c7b5" name="RPT1753f4c34f822300c742e321a310c7b5">313a43cd1ba300103b9040c6cc4bcbcf</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

@@ -2,8 +2,8 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2019-05-15 09:28:50</change_date>
         <changed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</changed_by>
-        <content display_value="Security Best Practices">7215bf2311632200964f016bcc1bdd38</content>
-        <related_change_log_entry display_value="2019-05-15 14:58:50">50ccbb2f4f113300c742e321a310c7b4</related_change_log_entry>
+        <content display_value="">7215bf2311632200964f016bcc1bdd38</content>
+        <related_change_log_entry display_value="2019-05-15 09:28:50">50ccbb2f4f113300c742e321a310c7b4</related_change_log_entry>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>
         <sys_created_by>admin</sys_created_by>
